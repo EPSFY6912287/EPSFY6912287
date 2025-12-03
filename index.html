@@ -2,228 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>ENG0018 Conference Paper</title>
+<meta charset="UTF-8">
+<title>ENG0018 Conference Paper</title>
 
-    <style>
-        body {
-            font-family: Calibri, Arial, sans-serif;
-            background-color: #ffffff;
-            margin: 40px;
-            line-height: 1.6;
-        }
+<style>
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background-color: white;
+    margin: 40px;
+    line-height: 1.6;
+}
 
-        h1, h2 {
-            text-align: left;
-        }
+h1, h2 {
+    text-align: left;
+}
 
-        hr {
-            margin: 20px 0;
-        }
+hr {
+    margin: 20px 0;
+}
 
-        .abstract {
-            border: 1px solid #ccc;
-            padding: 15px;
-            background-color: #fafafa;
-            width: 100%;
-        }
+.abstract-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fafafa;
+}
 
-        .section-title {
-            margin-top: 35px;
-            text-decoration: underline;
-        }
+.section-title {
+    margin-top: 35px;
+    text-decoration: underline;
+}
 
-        .toc {
-            border: 1px solid #ccc;
-            padding: 15px;
-            background-color: #fcfcfc;
-            margin: 20px 0;
-            width: 100%;
-        }
+.toc {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fcfcfc;
+}
 
-        .toc ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-        .toc li {
-            margin: 6px 0;
-        }
+.toc li {
+    margin: 5px 0;
+}
 
-        .toc a {
-            text-decoration: none;
-            color: #0044aa;
-        }
+.references {
+    font-size: 0.95em;
+}
 
-        .toc a:hover {
-            text-decoration: underline;
-        }
-
-        .references {
-            font-size: 0.95em;
-        }
-
-        img {
-            display: block;
-            margin: 0 0 20px 0;
-        }
-    </style>
+img {
+    margin-bottom: 15px;
+}
+</style>
 </head>
 
 <body>
 
-    <img src="download.png" alt="Banner" width="900" height="200">
+<img src="download.png" width="900" height="200">
 
-    <h1>ENG0018 Computer Laboratory 2025/26</h1>
-    <h2>Student URN: 6912287</h2>
+<h1>ENG0018 Computer Laboratory 2025/26</h1>
+<h2>Student URN: 6912287</h2>
 
-    <hr>
+<hr>
 
-    <h2>Conference Paper: Comparison of Petrol, Diesel and Electric Powertrains for Passenger Vehicles</h2>
+<h2>Conference Paper: Comparison of Petrol, Diesel and Electric Powertrains for Passenger Vehicles</h2>
 
-    <hr>
+<hr>
 
-    <!-- TABLE OF CONTENTS -->
-    <div class="toc">
-        <h3>Table of Contents</h3>
-        <ul>
-            <li><a href="#abstract">Abstract</a></li>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#analysis">Analysis</a></li>
-            <ul>
-                <li><a href="#analysis-thermodynamics">4.1 Thermodynamic Efficiency</a></li>
-                <li><a href="#analysis-mechanical">4.2 Mechanical Complexity & Reliability</a></li>
-                <li><a href="#analysis-performance">4.3 Torque & Performance</a></li>
-                <li><a href="#analysis-energy">4.4 Energy Storage</a></li>
-                <li><a href="#analysis-emissions">4.5 Emissions</a></li>
-                <li><a href="#analysis-manufacturing">4.6 Manufacturing</a></li>
-                <li><a href="#analysis-infrastructure">4.7 Infrastructure</a></li>
-            </ul>
-            <li><a href="#conclusion">Conclusion</a></li>
-            <li><a href="#references">References</a></li>
-        </ul>
-    </div>
+<div class="toc">
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#analysis">Analysis</a></li>
+<ul>
+<li><a href="#analysis-1">4.1 Thermodynamic Efficiency</a></li>
+<li><a href="#analysis-2">4.2 Mechanical Complexity & Reliability</a></li>
+<li><a href="#analysis-3">4.3 Torque & Performance</a></li>
+<li><a href="#analysis-4">4.4 Energy Storage</a></li>
+<li><a href="#analysis-5">4.5 Emissions</a></li>
+<li><a href="#analysis-6">4.6 Manufacturing</a></li>
+<li><a href="#analysis-7">4.7 Infrastructure</a></li>
+</ul>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
 
 <!-- ABSTRACT -->
 <div id="abstract">
-    <h3 class="section-title">Abstract</h3>
-    <div class="abstract">
-        The progression of road vehicle powertrains has historically centred on internal 
-        combustion engine (ICE) systems, with modern engineering increasingly shifting toward 
-        electrification. This paper evaluates petrol, diesel and electric powertrains with 
-        emphasis on thermodynamic efficiency, system complexity, energy management and emissions 
-        engineering. Results show that diesel engines provide superior thermal efficiency among 
-        ICE systems, while electric drivetrains deliver unmatched energy efficiency and mechanical 
-        simplification. However, battery technology and electrical infrastructure remain 
-        engineering limitations to widespread EV adoption (Chan and Chau, 2001; Ehsani et al., 2004).
-    </div>
+<h3 class="section-title">Abstract</h3>
+<div class="abstract-box">
+The progression of road vehicle powertrains has historically centred on internal combustion engine systems, with modern engineering increasingly shifting toward electrification. This paper evaluates petrol, diesel and electric powertrains with emphasis on thermodynamic efficiency, system complexity, energy management and emissions engineering. Results show that diesel engines provide superior thermal efficiency among combustion systems, while electric drivetrains deliver unmatched energy efficiency and mechanical simplification. However, battery technology and electrical infrastructure remain engineering limitations to widespread adoption.
 </div>
-
+</div>
 
 <!-- INTRODUCTION -->
 <div id="introduction">
-    <h3 class="section-title">Introduction</h3>
-    <p>
-        Selection of a vehicle powertrain influences performance, environmental impact and life-cycle 
-        cost. Petrol engines operate under the Otto cycle, whereas diesel engines follow compression 
-        ignition governed by the Diesel cycle (Heywood, 2018). Electric vehicles convert stored 
-        electrical energy directly into mechanical output through electromagnetic processes 
-        (Larminie and Lowry, 2012). This paper presents an engineering comparison of these systems 
-        across efficiency, reliability and infrastructure constraints.
-    </p>
-    <p>
-        Increasing regulatory pressure and climate policy has accelerated electrification efforts. 
-        Engineers must consider full-system efficiency rather than tailpipe emissions alone 
-        (International Energy Agency, 2023).
-    </p>
+<h3 class="section-title">Introduction</h3>
+<p>
+Selection of a vehicle powertrain strongly influences dynamic performance, operating efficiency and environmental impact. Petrol engines operate using the Otto thermodynamic cycle, while diesel engines rely on compression ignition governed by the Diesel cycle (Heywood, 2018). Electric vehicles convert stored electrochemical energy directly into mechanical output through electromagnetic principles, eliminating many thermodynamic losses (Larminie and Lowry, 2012).
+</p>
+<p>
+Environmental regulation and climate targets have accelerated the development of electrified vehicles. Engineers must assess complete life-cycle performance rather than isolated operating efficiency in order to select appropriate propulsion systems (International Energy Agency, 2023).
+</p>
 </div>
-
 
 <!-- ANALYSIS -->
 <div id="analysis">
-    <h3 class="section-title">Analysis</h3>
+<h3 class="section-title">Analysis</h3>
 
-    <h4>4.1 Thermodynamic Efficiency</h4>
-    <p>
-        Petrol engines exhibit brake thermal efficiencies between 25–30% due to throttling losses and 
-        low compression ratios (Heywood, 2018). Diesel engines operate at higher compression ratios 
-        exceeding 20:1, allowing efficiencies approaching 40% (Stone, 2012). Electric motors convert 
-        energy electromagnetically, enabling efficiencies above 85% under nominal conditions 
-        (Chan and Chau, 2001). However, grid generation efficiency reduces total well-to-wheel 
-        effectiveness (National Grid ESO, 2022).
-    </p>
+<h4 id="analysis-1">4.1 Thermodynamic Efficiency</h4>
+<p>
+Petrol engines typically achieve brake thermal efficiencies of 25–30% due to throttling losses and limited compression ratios (Heywood, 2018). Diesel engines operate at higher compression pressures, commonly exceeding 20:1, enabling efficiencies approaching 40% (Stone, 2012). Electric motors do not depend on heat conversion and routinely exceed 85% conversion efficiency under steady operating conditions (Chan and Chau, 2001). However, overall well-to-wheel efficiency is reduced by electricity generation and transmission losses (National Grid ESO, 2022).
+</p>
 
-    <h4>4.2 Mechanical Complexity and Reliability</h4>
-    <p>
-        Diesel engines require reinforced components for high cylinder pressures, increasing mass and 
-        mechanical stress (Heywood, 2018). Electric drivetrains possess significantly fewer moving 
-        components, improving system reliability but increasing dependency on power electronics and 
-        software integrity (Ehsani et al., 2004).
-    </p>
+<h4 id="analysis-2">4.2 Mechanical Complexity & Reliability</h4>
+<p>
+Diesel engines require reinforced components to tolerate high-pressure combustion, increasing mass and material usage (Heywood, 2018). Electric drivetrains eliminate multi-speed transmissions and piston assemblies, improving mechanical reliability but increasing reliance on control electronics and thermal management systems (Ehsani et al., 2004).
+</p>
 
-    <h4>4.3 Torque Characteristics and Performance</h4>
-    <p>
-        Diesel powertrains generate high low-speed torque making them suitable for heavy-duty usage. 
-        Petrol engines operate effectively at higher engine speeds requiring multi-gear transmissions. 
-        Electric motors provide instantaneous torque from zero speed and permit energy recovery through 
-        regenerative braking, increasing urban efficiency (Reitz et al., 2020).
-    </p>
+<h4 id="analysis-3">4.3 Torque & Performance</h4>
+<p>
+Diesel engines provide strong low-speed torque for heavy load applications. Petrol engines achieve peak power at high rotational speeds and depend on gearbox ratios for efficiency. Electric motors generate maximum torque at zero speed, improving acceleration and enabling regenerative braking systems that recover kinetic energy during deceleration (Reitz et al., 2020).
+</p>
 
-    <h4>4.4 Energy Storage and Refuelling</h4>
-    <p>
-        Liquid fuels provide superior energy density and rapid refuelling (Stone, 2012). Battery systems 
-        suffer from capacity fade, long charging times and decreased low-temperature performance 
-        (Verma, Kumar and Jain, 2021; U.S. Department of Energy, 2022).
-    </p>
+<h4 id="analysis-4">4.4 Energy Storage</h4>
+<p>
+Liquid fuels possess superior volumetric and gravimetric energy density and permit quick refuelling. Battery-based vehicles require extended charging times and experience gradual capacity degradation (Verma, Kumar and Jain, 2021; U.S. Department of Energy, 2022).
+</p>
 
-    <h4>4.5 Emissions Engineering</h4>
-    <p>
-        Combustion engines release CO₂ and particulates, requiring exhaust aftertreatment. Electric 
-        vehicles eliminate tailpipe output, although battery manufacturing produces substantial 
-        greenhouse emissions (Volkswagen AG, 2021; International Energy Agency, 2023).
-    </p>
+<h4 id="analysis-5">4.5 Emissions</h4>
+<p>
+Combustion engines emit carbon dioxide, nitrogen oxides and unburnt hydrocarbons, requiring complex exhaust after-treatment. Electric vehicles generate no direct emissions; however battery production and electricity generation produce indirect environmental impact (Volkswagen AG, 2021; International Energy Agency, 2023).
+</p>
 
-    <h4>4.6 Manufacturing and Materials</h4>
-    <p>
-        High-strength steel alloys dominate diesel manufacturing. EVs rely on rare earth metals and 
-        lithium-based systems that raise supply chain concerns (Verma et al., 2021).
-    </p>
+<h4 id="analysis-6">4.6 Manufacturing</h4>
+<p>
+Diesel engines require hardened steel components manufactured using forging techniques, while EV batteries depend on lithium, cobalt and rare earth metals that introduce geopolitical supply risk (Verma et al., 2021).
+</p>
 
-    <h4>4.7 Infrastructure Constraints</h4>
-    <p>
-        Electrical grid capacity remains a limiting factor for nationwide EV adoption. Smart charging 
-        and off-peak management strategies are required (National Grid ESO, 2022).
-    </p>
+<h4 id="analysis-7">4.7 Infrastructure</h4>
+<p>
+Rapid electric vehicle adoption is constrained by charging infrastructure and power grid capacity. Smart charging schemes are required to prevent peak-load overload (National Grid ESO, 2022).
+</p>
+
 </div>
-
 
 <!-- CONCLUSION -->
 <div id="conclusion">
-    <h3 class="section-title">Conclusion</h3>
-    <p>
-        Diesel engines remain the most efficient combustion option, petrol engines offer cost-effective 
-        accessibility, and electric drivetrains present unmatched system efficiency. Hybrid 
-        configurations serve as transitional technologies until infrastructure and battery design mature.
-    </p>
+<h3 class="section-title">Conclusion</h3>
+<p>
+Diesel engines retain excellent efficiency for long-range applications, petrol engines remain cost-effective for consumers, and electric drivetrains offer unmatched energy efficiency and emissions reduction potential. Hybrid vehicles represent a transitional technology as battery systems and grid infrastructure continue to evolve.
+</p>
 </div>
 
-
-    <!-- REFERENCES -->
-    <h3 class="section-title" id="references">References</h3>
-    <div class="references">
-        Chan, C.C. and Chau, K.T. (2001) <i>Modern electric vehicle technology</i>. Oxford: Oxford University Press.<br><br>
-        Ehsani, M., Gao, Y., Gay, S.E. and Emadi, A. (2004) <i>Modern electric, hybrid electric, and fuel cell vehicles</i>. Boca Raton: CRC Press.<br><br>
-        Heywood, J.B. (2018) <i>Internal combustion engine fundamentals</i>. 2nd edn. New York: McGraw-Hill Education.<br><br>
-        International Energy Agency (2023) <i>Global EV outlook 2023</i>. Paris: IEA.<br><br>
-        Larminie, J. and Lowry, J. (2012) <i>Electric vehicle technology explained</i>. Chichester: Wiley.<br><br>
-        National Grid ESO (2022) <i>Future energy scenarios</i>. London: National Grid ESO.<br><br>
-        Reitz, R.D., Ogawa, H., Payri, R. and Fansler, T. (2020) ‘Recent advances in diesel combustion’, <i>International Journal of Engine Research</i>, 21(1), pp. 3–57.<br><br>
-        Stone, R. (2012) <i>Introduction to internal combustion engines</i>. Basingstoke: Palgrave Macmillan.<br><br>
-        U.S. Department of Energy (2022) <i>Battery electric vehicle basics</i>. Washington DC: DOE.<br><br>
-        Verma, G., Kumar, A. and Jain, G. (2021) ‘A review of electric vehicle battery technologies’, <i>Journal of Energy Storage</i>, 41, 102839.<br><br>
-        Volkswagen AG (2021) <i>Life cycle assessment of electric vehicles</i>. Wolfsburg: Volkswagen AG.
-    </div>
-
+<!-- REFERENCES -->
+<div id="references">
+<h3 class="section-title">References</h3>
+<div class="references">
+Chan, C.C. and Chau, K.T. (2001) <i>Modern Electric Vehicle Technology</i>. Oxford: Oxford University Press.<br><br>
+Ehsani, M., Gao, Y., Gay, S.E. and Emadi, A. (2004) <i>Modern Electric, Hybrid Electric, and Fuel Cell Vehicles</i>. CRC Press.<br><br>
+Heywood, J.B. (2018) <i>Internal Combustion Engine Fundamentals</i>. 2nd edn. McGraw-Hill Education.<br><br>
+International Energy Agency (2023) <i>Global EV Outlook 2023</i>. Paris: IEA.<br><br>
+Larminie, J. and Lowry, J. (2012) <i>Electric Vehicle Technology Explained</i>. Wiley.<br><br>
+National Grid ESO (2022) <i>Future Energy Scenarios</i>. London: National Grid ESO.<br><br>
+Reitz, R.D., Ogawa, H., Payri, R. and Fansler, T. (2020) ‘Recent Advances in Diesel Combustion’, <i>International Journal of Engine Research</i>, 21(1), pp. 3–57.<br><br>
+Stone, R. (2012) <i>Introduction to Internal Combustion Engines</i>. Palgrave Macmillan.<br><br>
+U.S. Department of Energy (2022) <i>Battery Electric Vehicle Basics</i>. Washington DC: DOE.<br><br>
+Verma, G., Kumar, A. and Jain, G. (2021) ‘A Review of Electric Vehicle Battery Technologies’, <i>Journal of Energy Storage</i>, 41, 102839.<br><br>
+Volkswagen AG (2021) <i>Life Cycle Assessment of Electric Vehicles</i>. Wolfsburg.
+</div>
+</div>
 </body>
 </html>
 
