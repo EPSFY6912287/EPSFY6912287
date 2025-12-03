@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ENG0018 Conference Paper</title>
+
     <style>
         body {
             font-family: Calibri, Arial, sans-serif;
@@ -24,6 +25,7 @@
             border: 1px solid #ccc;
             padding: 15px;
             background-color: #fafafa;
+            width: 100%;
         }
 
         .section-title {
@@ -63,7 +65,7 @@
 
         img {
             display: block;
-            margin: 0;
+            margin: 0 0 20px 0;
         }
     </style>
 </head>
@@ -87,13 +89,16 @@
         <ul>
             <li><a href="#abstract">Abstract</a></li>
             <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#thermodynamics">Thermodynamic Efficiency</a></li>
-            <li><a href="#mechanical">Mechanical Complexity and Reliability</a></li>
-            <li><a href="#torque">Torque and Performance</a></li>
-            <li><a href="#energy">Energy Storage and Refuelling</a></li>
-            <li><a href="#emissions">Emissions Engineering</a></li>
-            <li><a href="#manufacturing">Manufacturing and Materials</a></li>
-            <li><a href="#infrastructure">Infrastructure</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <ul>
+                <li><a href="#analysis-thermodynamics">4.1 Thermodynamic Efficiency</a></li>
+                <li><a href="#analysis-mechanical">4.2 Mechanical Complexity & Reliability</a></li>
+                <li><a href="#analysis-performance">4.3 Torque & Performance</a></li>
+                <li><a href="#analysis-energy">4.4 Energy Storage</a></li>
+                <li><a href="#analysis-emissions">4.5 Emissions</a></li>
+                <li><a href="#analysis-manufacturing">4.6 Manufacturing</a></li>
+                <li><a href="#analysis-infrastructure">4.7 Infrastructure</a></li>
+            </ul>
             <li><a href="#conclusion">Conclusion</a></li>
             <li><a href="#references">References</a></li>
         </ul>
@@ -102,84 +107,93 @@
     <!-- ABSTRACT -->
     <h3 class="section-title" id="abstract">Abstract</h3>
     <div class="abstract">
-        The development of road vehicle powertrains has historically centred on internal combustion engine (ICE)
-        technology, with recent innovation shifting toward electrification. This study examines petrol, diesel and
-        electric propulsion systems from an engineering perspective, evaluating performance, efficiency, emissions,
-        manufacturing complexity and infrastructure requirements. The engineering trade-offs associated with
-        thermodynamic efficiency, mechanical design and energy conversion are discussed. Results indicate that while
-        diesel engines offer superior efficiency among combustion systems, electric drivetrains provide substantially
-        higher energy conversion efficiency and simplified mechanical architecture. However, limitations relating to
-        battery energy density and power generation infrastructure remain significant obstacles to full electrification
-        (Chan and Chau, 2001; Ehsani et al., 2004).
+        The progression of road vehicle powertrains has historically centred on internal 
+        combustion engine (ICE) systems, with modern engineering increasingly shifting toward 
+        electrification. This paper evaluates petrol, diesel and electric powertrains with 
+        emphasis on thermodynamic efficiency, system complexity, energy management and emissions 
+        engineering. Results show that diesel engines provide superior thermal efficiency among 
+        ICE systems, while electric drivetrains deliver unmatched energy efficiency and mechanical 
+        simplification. However, battery technology and electrical infrastructure remain 
+        engineering limitations to widespread EV adoption (Chan and Chau, 2001; Ehsani et al., 2004).
     </div>
 
     <!-- INTRODUCTION -->
     <h3 class="section-title" id="introduction">Introduction</h3>
     <p>
-        Powertrain selection is a critical engineering decision influencing vehicle performance, environmental impact
-        and economic viability. Petrol and diesel engines rely on thermodynamic energy conversion governed by the Otto
-        and Diesel cycles (Heywood, 2018). Electric vehicles instead use electrochemical energy storage and
-        electromagnetic power conversion (Larminie and Lowry, 2012).
+        Selection of a vehicle powertrain influences performance, environmental impact and life-cycle 
+        cost. Petrol engines operate under the Otto cycle, whereas diesel engines follow compression 
+        ignition governed by the Diesel cycle (Heywood, 2018). Electric vehicles convert stored 
+        electrical energy directly into mechanical output through electromagnetic processes 
+        (Larminie and Lowry, 2012). This paper presents an engineering comparison of these systems 
+        across efficiency, reliability and infrastructure constraints.
     </p>
     <p>
-        Increased environmental concerns and tightening legislation have driven innovation toward low-emission vehicle
-        technologies (International Energy Agency, 2023). Engineers must consider efficiency, durability, materials,
-        infrastructure, and operational performance in modern propulsion system selection.
+        Increasing regulatory pressure and climate policy has accelerated electrification efforts. 
+        Engineers must consider full-system efficiency rather than tailpipe emissions alone 
+        (International Energy Agency, 2023).
     </p>
 
-    <!-- SECTIONS -->
-    <h3 class="section-title" id="thermodynamics">Thermodynamic Efficiency</h3>
+    <!-- ANALYSIS -->
+    <h3 class="section-title" id="analysis">Analysis</h3>
+
+    <h4 id="analysis-thermodynamics">4.1 Thermodynamic Efficiency</h4>
     <p>
-        Petrol engines are limited by lower compression ratios and heat losses (Heywood, 2018), typically achieving
-        efficiencies of 25–30%, while diesel engines may reach up to 40% (Stone, 2012). Electric motors exceed 85%
-        efficiency owing to reduced mechanical and thermal losses (Chan and Chau, 2001). However, electricity
-        generation losses can reduce overall system efficiency (National Grid ESO, 2022).
+        Petrol engines exhibit brake thermal efficiencies between 25–30% due to throttling losses and 
+        low compression ratios (Heywood, 2018). Diesel engines operate at higher compression ratios 
+        exceeding 20:1, allowing efficiencies approaching 40% (Stone, 2012). Electric motors convert 
+        energy electromagnetically, enabling efficiencies above 85% under nominal conditions 
+        (Chan and Chau, 2001). However, grid generation efficiency reduces total well-to-wheel 
+        effectiveness (National Grid ESO, 2022).
     </p>
 
-    <h3 class="section-title" id="mechanical">Mechanical Complexity and Reliability</h3>
+    <h4 id="analysis-mechanical">4.2 Mechanical Complexity and Reliability</h4>
     <p>
-        Diesel engines require heavy-duty construction for high-pressure operation, increasing mass and cost
-        (Heywood, 2018). Electric powertrains feature fewer moving components, improving mechanical reliability but
-        increasing reliance on electronic control systems (Ehsani et al., 2004).
+        Diesel engines require reinforced components for high cylinder pressures, increasing mass and 
+        mechanical stress (Heywood, 2018). Electric drivetrains possess significantly fewer moving 
+        components, improving system reliability but increasing dependency on power electronics and 
+        software integrity (Ehsani et al., 2004).
     </p>
 
-    <h3 class="section-title" id="torque">Torque and Performance</h3>
+    <h4 id="analysis-performance">4.3 Torque Characteristics and Performance</h4>
     <p>
-        Diesel engines generate high low-speed torque (Reitz et al., 2020). Electric motors achieve peak torque at
-        zero speed (Chan and Chau, 2001). Regenerative braking improves efficiency but increases battery thermal load
-        (Ehsani et al., 2004).
+        Diesel powertrains generate high low-speed torque making them suitable for heavy-duty usage. 
+        Petrol engines operate effectively at higher engine speeds requiring multi-gear transmissions. 
+        Electric motors provide instantaneous torque from zero speed and permit energy recovery through 
+        regenerative braking, increasing urban efficiency (Reitz et al., 2020).
     </p>
 
-    <h3 class="section-title" id="energy">Energy Storage and Refuelling</h3>
+    <h4 id="analysis-energy">4.4 Energy Storage and Refuelling</h4>
     <p>
-        Liquid fuels provide high energy density and fast refuelling (Stone, 2012). EVs use lithium-ion batteries
-        with significantly lower energy density and degradation concerns (Verma, Kumar and Jain, 2021; U.S.
-        Department of Energy, 2022).
+        Liquid fuels provide superior energy density and rapid refuelling (Stone, 2012). Battery systems 
+        suffer from capacity fade, long charging times and decreased low-temperature performance 
+        (Verma, Kumar and Jain, 2021; U.S. Department of Energy, 2022).
     </p>
 
-    <h3 class="section-title" id="emissions">Emissions Engineering</h3>
+    <h4 id="analysis-emissions">4.5 Emissions Engineering</h4>
     <p>
-        Petrol and diesel engines require exhaust treatment systems (Reitz et al., 2020). EVs produce no tailpipe
-        emissions but still generate lifecycle emissions through battery manufacturing and electricity production
-        (Volkswagen AG, 2021; International Energy Agency, 2023).
+        Combustion engines release CO₂ and particulates, requiring exhaust aftertreatment. Electric 
+        vehicles eliminate tailpipe output, although battery manufacturing produces substantial 
+        greenhouse emissions (Volkswagen AG, 2021; International Energy Agency, 2023).
     </p>
 
-    <h3 class="section-title" id="manufacturing">Manufacturing and Materials</h3>
+    <h4 id="analysis-manufacturing">4.6 Manufacturing and Materials</h4>
     <p>
-        Diesel engines require high-strength alloys (Heywood, 2018). EV batteries rely on lithium, cobalt and nickel
-        supply chains (Verma et al., 2021).
+        High-strength steel alloys dominate diesel manufacturing. EVs rely on rare earth metals and 
+        lithium-based systems that raise supply chain concerns (Verma et al., 2021).
     </p>
 
-    <h3 class="section-title" id="infrastructure">Infrastructure</h3>
+    <h4 id="analysis-infrastructure">4.7 Infrastructure Constraints</h4>
     <p>
-        Electric vehicle adoption requires charging networks and grid reinforcement (National Grid ESO, 2022).
+        Electrical grid capacity remains a limiting factor for nationwide EV adoption. Smart charging 
+        and off-peak management strategies are required (National Grid ESO, 2022).
     </p>
 
+    <!-- CONCLUSION -->
     <h3 class="section-title" id="conclusion">Conclusion</h3>
     <p>
-        Diesel engines remain the most efficient combustion systems, petrol engines remain low cost, and EVs offer the
-        greatest sustainability potential. Hybrid systems offer transitional capability until battery technology and
-        grid infrastructure mature (Ehsani et al., 2004).
+        Diesel engines remain the most efficient combustion option, petrol engines offer cost-effective 
+        accessibility, and electric drivetrains present unmatched system efficiency. Hybrid 
+        configurations serve as transitional technologies until infrastructure and battery design mature.
     </p>
 
     <!-- REFERENCES -->
@@ -200,6 +214,7 @@
 
 </body>
 </html>
+
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -272,7 +287,7 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
+    const IntroductionCount = displayWordCount("introduction");
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
